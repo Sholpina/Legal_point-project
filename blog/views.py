@@ -9,4 +9,5 @@ def all_blogs(request):
 
 def detail(request, blog_id):
     blog = get_object_or_404(Blog, pk=blog_id)
-    return render(request, 'blog/detail.html', {'blog': blog})
+    tag = Blog.objects.filter(tag__name="important")
+    return render(request, 'blog/detail.html', {'blog': blog, 'tag': tag})
