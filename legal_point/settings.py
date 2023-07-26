@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-keu4u1qg6*)fpb0_a%!my@^$g2&#9320m-&ekibjrpii!7%!)_'
+SECRET_KEY = 'django-insecure-keu4u1qg6*)fpbdfgdfgdf0_a%!my@^$g2&#9320m-&ekibjrpii!7%!)_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'legalpointdb',
         'USER': 'postgres',
-        'PASSWORD': 'sholpina',
+        'PASSWORD': '1234',
         'HOST': '127.0.0.1',
         'PORT': '5433',
     }
@@ -138,4 +138,4 @@ except ImportError:
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEFAULT_AUTO_FIELD='django.db.models.BigAutoField'
