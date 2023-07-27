@@ -6,7 +6,7 @@
 
 <h1 id="blogtitle" class="font-weight-bold text-center">Blog</h1>
 
-<h3 class="text-center mb-5">Nick has written {{ blogs.count }} blog{{ blogs.count|pluralize }}</h3>
+<h3 class="text-center mb-5">Fuad Aghayev has written {{ blogs.count }} blog{{ blogs.count|pluralize }}</h3>
 
 {% for blog in blogs %}
 <div class="row justify-content-center my-3">
@@ -16,7 +16,7 @@
                 </a>
                 <h5 class="text-muted">{{ blog.date|date:'M d Y'|upper }}</h5>
                 <h4>{{ blog.description|striptags|truncatechars:100 }}</h4>
-                <h6>{{ #blog.tag }}</h6>
+                <h6>{{ blog.tag }}</h6>
         </div>
 </div>
 {% endfor %}
