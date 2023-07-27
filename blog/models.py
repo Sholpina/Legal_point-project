@@ -6,7 +6,7 @@ class Blog(models.Model):
         description = models.TextField()
         date = models.DateField()
         image = models.ImageField(upload_to='media/blog/images', null=True, blank=True)
-        # tag = models.CharField(max_length=50)
+        tag = models.CharField(max_length=50, null=True, blank=True)
 
         def __str__(self):
                 return self.title
