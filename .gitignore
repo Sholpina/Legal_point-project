@@ -16,13 +16,17 @@ venv.bak/
 
 # Django stuff:
 *.log
+*.jpg
 local_settings.py
 db.sqlite3
 db.postgresql
 db.sqlite3-journal
 *.pot
+*.png
+*.svg
 manage.py
 migrations/
+images/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
