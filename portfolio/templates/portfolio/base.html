@@ -1,7 +1,7 @@
+
 {% load static %}
 <!DOCTYPE html>
 <html lang="en>
-
 <head>
         <!-- Required meta tags -->
         <meta charset=" utf-8">
@@ -11,8 +11,9 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous">
+<!-- Plugins CSS -->
 
-<link rel="stylesheet" href="{% static 'portfolio\css\custom.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}">
 
 <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
@@ -20,6 +21,9 @@
 
 <!-- Theme CSS -->
 <link id="style-switch" rel="stylesheet" type="text/css" href="{% static 'portfolio/css/style.css' %}">
+
+<!---->
+
 
 <title>Fuad Aghayev</title>
 </head>
@@ -61,19 +65,20 @@
         </div>
         <div class="offcanvas-body d-flex flex-column pt-0">
                 <div>
-                        <img class="light-mode-item my-3" src="assets/images/logo.svg" alt="logo">
-                        <img class="dark-mode-item my-3" src="assets/images/logo-light.svg" alt="logo">
-                        <p>The next-generation blog, news, and magazine theme for you to start sharing your stories
-                                today! </p>
+                        <img class="light-mode-item my-3" src="{% static 'portfolio/images/images/logo.svg'  %}"
+                             alt="logo">
+                        <img class="dark-mode-item my-3" src="{% static 'portfolio/images/logo-light.svg' %}"
+                             alt="logo">
+                        <p>Адвокатское бюро Фуада Агаева</p>
                         <!-- Nav START -->
                         <ul class="nav d-block flex-column my-4">
                                 <li class="nav-item h5">
                                         <a class="nav-link" href="index.html">Home</a>
                                 <li class="nav-item h5">
-                                        <a class="nav-link" href="about-us.html">About</a>
+                                        <a class="nav-link" href="about-us.html">О нас</a>
                                 </li>
                                 <li class="nav-item h5">
-                                        <a class="nav-link" href="post-grid.html">Our Journal</a>
+                                        <a class="nav-link" href="post-grid.html">Наши услуги</a>
                                 </li>
                                 <li class="nav-item h5">
                                         <a class="nav-link" href="contact-us.html">Contact Us</a>
@@ -81,7 +86,7 @@
                         </ul>
                         <!-- Nav END -->
                         <div class="bg-primary bg-opacity-10 p-4 mb-4 text-center w-100 rounded">
-                                <span>The Blogzine</span>
+                                <span>The Blog Fuad Aghayev's</span>
                                 <h3>Save on Premium Membership</h3>
                                 <p>Get the insights report trusted by experts around the globe. Become a Member
                                         Today!</p>
@@ -90,10 +95,10 @@
                 </div>
                 <div class="mt-auto pb-3">
                         <!-- Address -->
-                        <p class="text-body mb-2 fw-bold">New York, USA (HQ)</p>
-                        <address class="mb-0">750 Sing Sing Rd, Horseheads, NY, 14845</address>
-                        <p class="mb-2">Call: <a href="#" class="text-body"><u>469-537-2410</u> (Toll-free)</a></p>
-                        <a href="#" class="text-body d-block">hello@blogzine.com</a>
+                        <p class="text-body mb-2 fw-bold">Baku, Azerbayjan (AZ)</p>
+                        <address class="mb-0">Sharifzade 122</address>
+                        <p class="mb-2">Call: <a href="#" class="text-body"><u>051-300-40-63</u> (Toll-free)</a></p>
+                        <a href="#" class="text-body d-block">sholpina2017@gmail.com</a>
                 </div>
         </div>
 </div>
@@ -118,7 +123,7 @@ Header START -->
                                                    href="https://themes.getbootstrap.com/store/webestica/">Buy now!</a>
                                         </li>
                                         <li class="nav-item">
-                                                <a class="nav-link" href="signin.html">Login / Join</a>
+                                                <a class="nav-link" href="signupuser.html">Login / Join</a>
                                         </li>
                                 </ul>
                                 <!-- Top bar right -->
@@ -140,63 +145,42 @@ Header START -->
                                         </div>
 
                                         <!-- Dark mode options START -->
-                                        <div class="nav-item dropdown mx-2">
-                                                <!-- Switch button -->
-                                                <button class="modeswitch" id="bd-theme" type="button"
-                                                        aria-expanded="false" data-bs-toggle="dropdown"
-                                                        data-bs-display="static">
-                                                        <svg class="theme-icon-active">
-                                                                <use href="#"></use>
-                                                        </svg>
-                                                </button>
-                                                <!-- Dropdown items -->
-                                                <ul class="dropdown-menu min-w-auto dropdown-menu-end"
-                                                    aria-labelledby="bd-theme">
-                                                        <li class="mb-1">
-                                                                <button type="button"
-                                                                        class="dropdown-item d-flex align-items-center"
-                                                                        data-bs-theme-value="light">
-                                                                        <svg width="16" height="16" fill="currentColor"
-                                                                             class="bi bi-brightness-high-fill fa-fw mode-switch me-1"
-                                                                             viewBox="0 0 16 16">
-                                                                                <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-                                                                                <use href="#"></use>
-                                                                        </svg>
-                                                                        Light
-                                                                </button>
-                                                        </li>
-                                                        <li class="mb-1">
-                                                                <button type="button"
-                                                                        class="dropdown-item d-flex align-items-center"
-                                                                        data-bs-theme-value="dark">
-                                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                                             width="16" height="16" fill="currentColor"
-                                                                             class="bi bi-moon-stars-fill fa-fw mode-switch me-1"
-                                                                             viewBox="0 0 16 16">
-                                                                                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-                                                                                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-                                                                                <use href="#"></use>
-                                                                        </svg>
-                                                                        Dark
-                                                                </button>
-                                                        </li>
-                                                        <li>
-                                                                <button type="button"
-                                                                        class="dropdown-item d-flex align-items-center active"
-                                                                        data-bs-theme-value="auto">
-                                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                                             width="16" height="16" fill="currentColor"
-                                                                             class="bi bi-circle-half fa-fw mode-switch me-1"
-                                                                             viewBox="0 0 16 16">
-                                                                                <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-                                                                                <use href="#"></use>
-                                                                        </svg>
-                                                                        Auto
-                                                                </button>
-                                                        </li>
-                                                </ul>
-                                        </div>
-                                        <!-- Dark mode options END -->
+					<div class="nav-item dropdown mx-2">
+						<!-- Switch button -->
+						<button class="modeswitch" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static">
+							<svg class="theme-icon-active"><use href="#"></use></svg>
+						</button>
+						<!-- Dropdown items -->
+						<ul class="dropdown-menu min-w-auto dropdown-menu-end" aria-labelledby="bd-theme">
+							<li class="mb-1">
+								<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
+									<svg width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
+										<path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+										<use href="#"></use>
+									</svg>Light
+								</button>
+							</li>
+							<li class="mb-1">
+								<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
+										<path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+										<path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+										<use href="#"></use>
+									</svg>Dark
+								</button>
+							</li>
+							<li>
+								<button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half fa-fw mode-switch me-1" viewBox="0 0 16 16">
+										<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+										<use href="#"></use>
+									</svg>Auto
+								</button>
+							</li>
+						</ul>
+					</div>
+					<!-- Dark mode options END -->
+
 
                                         <ul class="nav">
                                                 <li class="nav-item">
@@ -334,7 +318,7 @@ Header START -->
                                                                 </ul>
                                                         </li>
                                                         <li><a class="dropdown-item" href="404.html">Error 404</a></li>
-                                                        <li><a class="dropdown-item" href="signin.html">Signin</a></li>
+                                                        <li><a class="dropdown-item" href="signupuser.html">Signin</a></li>
                                                         <li><a class="dropdown-item" href="signup.html">Signup</a></li>
                                                         <li><a class="dropdown-item" href="offline.html">offline</a>
                                                         </li>
@@ -706,20 +690,20 @@ Header START -->
                                         </a>
                                 </div>
                         </div>
-<!--                        <div class="nav-item dropdown nav-search dropdown-toggle-icon-none">-->
-<!--                                <a class="nav-link text-uppercase dropdown-toggle" role="button" href="#" id="navSearch"-->
-<!--                                   data-bs-toggle="dropdown" aria-expanded="false">-->
-<!--                                        <i class="bi bi-search fs-4"> </i>-->
-<!--                                </a>-->
-<!--                                <div class="dropdown-menu dropdown-menu-end shadow rounded p-2"-->
-<!--                                     aria-labelledby="navSearch">-->
-<!--                                        <form class="input-group">-->
-<!--                                                <input class="form-control border-success" type="search"-->
-<!--                                                       placeholder="Search" aria-label="Search">-->
-<!--                                                <button class="btn btn-success m-1" type="submit">Search</button>-->
-<!--                                        </form>-->
-<!--                                </div>-->
-<!--                        </div>-->
+                        <!--                        <div class="nav-item dropdown nav-search dropdown-toggle-icon-none">-->
+                        <!--                                <a class="nav-link text-uppercase dropdown-toggle" role="button" href="#" id="navSearch"-->
+                        <!--                                   data-bs-toggle="dropdown" aria-expanded="false">-->
+                        <!--                                        <i class="bi bi-search fs-4"> </i>-->
+                        <!--                                </a>-->
+                        <!--                                <div class="dropdown-menu dropdown-menu-end shadow rounded p-2"-->
+                        <!--                                     aria-labelledby="navSearch">-->
+                        <!--                                        <form class="input-group">-->
+                        <!--                                                <input class="form-control border-success" type="search"-->
+                        <!--                                                       placeholder="Search" aria-label="Search">-->
+                        <!--                                                <button class="btn btn-success m-1" type="submit">Search</button>-->
+                        <!--                                        </form>-->
+                        <!--                                </div>-->
+                        <!--                        </div>-->
                         <!-- Nav right END -->
                 </div>
         </nav>
@@ -753,8 +737,24 @@ Header END -->
 <script src="{% static 'portfolio/js/plur/plur.js' %}"></script>
 
 <!-- Template Functions -->
-<script src="{% static 'portfolio/js/functions.js' %}"></script>
+<!--<script src="{% static 'portfolio/js/functions.js' %}"></script>-->
 <script src="{% static 'portfolio/js/dark_mode.js' %}"></script>
+
+!-- Back to top -->
+<div class="back-top"><i class="bi bi-arrow-up-short"></i></div>
+
+<!-- =======================
+JS libraries, plugins and custom scripts -->
+
+<!-- Bootstrap JS -->
+<script src="{% static 'assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+
+<!-- Vendors -->
+<script src="{% static 'assets/vendor/sticky-js/sticky.min.js' %}"></script>
+
+<!-- Template Functions -->
+<script src="{% static '/assets/js/functions.js' %}"></script>
+
 </body>
 
 </html>

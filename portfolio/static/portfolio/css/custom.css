@@ -1,3 +1,4 @@
+/*@import '_variables'; // Подключаем файл с переменными*/
 .navbar-nav .nav-link {
     color: rgba(0,0,0,1) !important;
 }
@@ -7,14 +8,14 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #blogtitle {
     font-size: 6rem;
 }
 a:link {
-  color: green;
+  color: red;
   background-color: transparent;
   text-decoration: none;
 }
@@ -24,10 +25,11 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  color: red;
+  color: #ff0000;
   background-color: transparent;
   text-decoration: underline;
 }
+
 a:active {
   color: yellow;
   background-color: transparent;
