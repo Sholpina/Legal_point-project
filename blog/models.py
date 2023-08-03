@@ -19,7 +19,7 @@ class Blog(models.Model):
         #         return time_since_publication
 
 # class Tag(models.Model):
-#     article = models.ForeignKey(
+#     article = models(Blog.ma
 #         Blog,
 #         on_delete=models.CASCADE,
 #         related_name="tags",

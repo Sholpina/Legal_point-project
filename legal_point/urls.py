@@ -24,7 +24,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('blog/', include('blog.urls')),
+    path('signin/', views.signinuser, name='signinuser'),
     path('signup/', views.signupuser, name='signupuser'),
+    path('dashboard/', views.dashboard, name='dashboard'),
+    path('about-us/', views.about, name='about'),
 
 
 

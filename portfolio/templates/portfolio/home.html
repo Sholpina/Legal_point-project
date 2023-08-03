@@ -5,20 +5,21 @@
 {% block content %}
 
 
-
 <div class="px-4 py-5 my-5 text-center">
-<!--    <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">-->
-    <h1 class="display-5 fw-bold text-body-emphasis">Welcome to my site Fuad Agahyev </h1>
-    <div class="col-lg-12 mx-auto">
-      <p class="lead mb-4">Наша юридическая команда предоставляет профессиональные и компетентные правовые услуги для наших клиентов. Мы обладаем многолетним опытом в различных областях права и готовы предоставить вам экспертное сопровождение в любых юридических вопросах.</p>
-      <img src="{% static 'portfolio/images/Fuadik.jpg' %}" class="img-fluid" width="1200" height="300>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <p></p>
-        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-      </div>
-    </div>
-  </div>
+        <!--    <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">-->
+        <h1 class="display-5 fw-bold text-body-emphasis">Welcome to my site Fuad Agahyev </h1>
+        <div class="col-lg-12 mx-auto">
+                <p class="lead mb-4">Наша юридическая команда предоставляет профессиональные и компетентные правовые
+                        услуги для наших клиентов. Мы обладаем многолетним опытом в различных областях права и готовы
+                        предоставить вам экспертное сопровождение в любых юридических вопросах.</p>
+                <img src="{% static 'portfolio/images/Fuadik.jpg' %}" class="img-fluid" width="1200" height="300>
+            <div class=" d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <p></p>
+                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+        </div>
+</div>
+</div>
 
 <div class="row">
         {% for project in projects %}
@@ -34,6 +35,15 @@
                 {% endif %}
                 <h3>{{ projects.title }}</h3>
                 <p>{{ projects.description }}</p>
+<!--                <img src="https://picsum.photos/600" alt="Photo of forest"/>-->
+                <section class="section">
+                      <div class="container-">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.137940902764!2d49.8041106!3d40.38363530000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d8b52dbd3bb%3A0xa5dc2c5f3b8d9924!2sRabita%20Bank!5e0!3m2!1sru!2saz!4v1691007140968!5m2!1sru!2saz"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                </div>
+                </section>
 
 
 
