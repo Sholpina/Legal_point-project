@@ -1,40 +1,24 @@
 {% extends 'portfolio/base.html' %}
-
 {% load static %}
 
 {% block content %}
 
-
-
-<div class="px-4 py-5 my-5 text-center">
-<!--    <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">-->
-    <h1 class="display-5 fw-bold text-body-emphasis">Welcome to my site Fuad Agahyev </h1>
-    <div class="col-lg-12 mx-auto">
-      <p class="lead mb-4">Наша юридическая команда предоставляет профессиональные и компетентные правовые услуги для наших клиентов. Мы обладаем многолетним опытом в различных областях права и готовы предоставить вам экспертное сопровождение в любых юридических вопросах.</p>
-      <img src="{% static 'portfolio/images/Fuadik.jpg' %}" class="img-fluid" width="1200" height="300>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <p></p>
-        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-      </div>
-    </div>
-  </div>
-
-<div class="row">
-        {% for project in projects %}
-        <div class="col-lg-4 col-md-6">
+<div class="container">
+    <div class="row g-4">
+        <div class="col-md-12 col-lg-12 mx-auto text-center">
+                {% for project in projects %}
+                <h2>{{ project.title }}</h2>
+               <p>{{ project.description }}</p>
 
                 {% if project.url %}
+                <br>
                 <a href="{{ project.url }}">
                         <img src="{{ project.image.url }}" class="img-fluid mb-2">
                 </a>
+
                 {% else %}
-
-                <img src="{{ project.image.url }}" class="img-fluid mb-2">
+                        <img src="{{ project.image.url }}" class="img-fluid mb-2">
                 {% endif %}
-                <h3>{{ projects.title }}</h3>
-                <p>{{ projects.description }}</p>
-
 
 
         </div>
@@ -43,3 +27,7 @@
 
 {% include "portfolio/footer.html" %}
 {% endblock %}
+</body>
+
+
+
